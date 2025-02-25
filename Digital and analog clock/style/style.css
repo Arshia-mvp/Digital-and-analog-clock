@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.digital-clock {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.clock-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(calc(var(--i) * 30deg));
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(var(--i) * 30deg));
+    transform-origin: center;
+}
+.num::before {
+    content: attr(style);
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(calc(var(--i) * -30deg));
+}
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background: white;
+    border-radius: 5px;
+}
+.hour-hand {
+    width: 6px;
+    height: 80px;
+}
+.minute-hand {
+    width: 4px;
+    height: 100px;
+}
+.second-hand {
+    width: 2px;
+    height: 107px;
+    background: red;
+}
+.num {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(var(--i) * 30deg)) translate(90px) rotate(calc(var(--i) * -30deg));
+}
+.num1{
+    position: absolute;
+    font-size: 20px;
+    top: 18px;
+    left: 210px;
+}
+.num2{
+    position: absolute;
+    font-size: 20px;
+    top: 60px;
+    left: 240px;
+}
+.num3{
+    position: absolute;
+    font-size: 20px;
+    top: 123px;
+    left: 260px;
+}
+.num4{
+    position: absolute;
+    font-size: 20px;
+    top: 190px;
+    left: 257px;
+}
+.num5{
+    position: absolute;
+    font-size: 20px;
+    top: 249px;
+    left: 225px;
+}
+.num6{
+    position: absolute;
+    font-size: 20px;
+    top: 272px;
+    left: 143px;
+}
+.num7{
+    position: absolute;
+    font-size: 20px;
+    top: 253px;
+    left: 73px;
+}
+.num8{
+    position: absolute;
+    font-size: 20px;
+    top: 193px;
+    left: 30px;
+}
+.num9{
+    position: absolute;
+    font-size: 20px;
+    top: 123px;
+    left: 10px;
+}
+.num10{
+    position: absolute;
+    font-size: 20px;
+    top: 65px;
+    left: 40px;
+}
+.num11{
+    position: absolute;
+    font-size: 20px;
+    top: 22px;
+    left: 71px;
+}
+.num12{
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: 140px;
+}
